@@ -1,0 +1,32 @@
+
+
+
+body {
+    max-width: 30em;
+    margin: auto;
+    text-align: center;
+
+}
+
+/* Une carte du jeu */
+.carte {
+    list-style: none;
+    float: left;
+    width: 5em;
+    height: 7em;
+    margin: .3em;
+    border-radius: .5em;
+    box-shadow: 1px 1px 2px 1px gray;
+    padding: .5em;
+}
+
+/* Une carte retirée du jeu */
+.carte.suppr { visibility: hidden; }
+
+/* Une carte face cachée */
+.carte.dos {
+    background:
+            repeating-linear-gradient(45deg, transparent, transparent 5px,
+            lightgray 10px, gray 15px),
+            linear-gradient(to bottom, lightgray, darkgray);
+}
